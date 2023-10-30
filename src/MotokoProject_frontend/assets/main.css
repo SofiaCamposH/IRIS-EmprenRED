@@ -1,37 +1,40 @@
 body {
-    font-family: sans-serif;
-    font-size: 1.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-img {
-    max-width: 50vw;
-    max-height: 25vw;
-    display: block;
-    margin: auto;
+h1 {
+    color: aliceblue;
+    text-align: center;
+    font-family: fantasy;
+    font: size 500px;
 }
 
-form {
+label {
+    color: aliceblue;
+    font-family: fantasy;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(55, 55, 124);
+    align-items: center;
+}
+
+p{
+    color: white;
+    text-align: center;
+}
+
+button{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#info{
     display: flex;
     justify-content: center;
-    gap: 0.5em;
-    flex-flow: row wrap;
-    max-width: 40vw;
-    margin: auto;
-    align-items: baseline;
-}
-
-button[type="submit"] {
-    padding: 5px 20px;
-    margin: 10px auto;
-    float: right;
-}
-
-#greeting {
-    margin: 10px auto;
-    padding: 10px 60px;
-    border: 1px solid #222;
-}
-
-#greeting:empty {
-    display: none;
 }

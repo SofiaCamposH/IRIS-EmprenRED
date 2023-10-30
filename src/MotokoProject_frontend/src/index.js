@@ -1,19 +1,82 @@
 import { MotokoProject_backend } from "../../declarations/MotokoProject_backend";
 
-document.querySelector("form").addEventListener("submit", async (e) => {
+const add=document.querySelector('#add');
+const substract=document.querySelector('#substract');
+const multiply=document.querySelector('#multiply');
+const divided=document.querySelector('#divided');
+const exp=document.querySelector('#exp');
+
+add.addEventListener('click', async (e) =>{
+
   e.preventDefault();
-  const button = e.target.querySelector("button");
+  add.setAttribute('disabled', true)
 
-  const name = document.getElementById("name").value.toString();
+  const num1=parseInt(document.querySelector('#valor1').value,10);
+  const num2=parseInt(document.querySelector('#valor2').value,10);
 
-  button.setAttribute("disabled", true);
+  const result= await MotokoProject_backend.add(num1, num2);
 
-  // Interact with foo actor, calling the greet method
-  const greeting = await MotokoProject_backend.greet(name);
+  add.removeAttribute('disabled');
+  document.querySelector('#resultado').textContent=result;
+  return false
+})
 
-  button.removeAttribute("disabled");
+substract.addEventListener('click', async (e) =>{
 
-  document.getElementById("greeting").innerText = greeting;
+  e.preventDefault();
+  substract.setAttribute('disabled', true)
 
-  return false;
-});
+  const num1=parseInt(document.querySelector('#valor1').value,10);
+  const num2=parseInt(document.querySelector('#valor2').value,10);
+
+  const result= await MotokoProject_backend.substract(num1, num2);
+  
+  substract.removeAttribute('disabled');
+  document.querySelector('#resultado').textContent=result;
+  return false
+})
+
+multiply.addEventListener('click', async (e) =>{
+
+  e.preventDefault();
+  multiply.setAttribute('disabled', true)
+
+  const num1=parseInt(document.querySelector('#valor1').value,10);
+  const num2=parseInt(document.querySelector('#valor2').value,10);
+
+  const result= await MotokoProject_backend.multiply(num1, num2);
+  
+  multiply.removeAttribute('disabled');
+  document.querySelector('#resultado').textContent=result;
+  return false
+})
+
+divided.addEventListener('click', async (e) =>{
+
+  e.preventDefault();
+  divided.setAttribute('disabled', true)
+
+  const num1=parseInt(document.querySelector('#valor1').value,10);
+  const num2=parseInt(document.querySelector('#valor2').value,10);
+
+  const result= await MotokoProject_backend.divide(num1, num2);
+  
+  divided.removeAttribute('disabled');
+  document.querySelector('#resultado').textContent=result;
+  return false
+})
+
+exp.addEventListener('click', async (e) =>{
+
+  e.preventDefault();
+  exp.setAttribute('disabled', true)
+
+  const num1=parseInt(document.querySelector('#valor1').value,10);
+  const num2=parseInt(document.querySelector('#valor2').value,10);
+
+  const result= await MotokoProject_backend.exp(num1, num2);
+  
+  exp.removeAttribute('disabled');
+  document.querySelector('#resultado').textContent=result;
+  return false
+})
