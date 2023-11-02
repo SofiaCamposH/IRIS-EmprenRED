@@ -20,7 +20,7 @@ actor Calculadora {
     return result;
   };
 
-  public func divide(valor1 : Float, valor2 : Float) : async Float {
+  public func divided(valor1 : Float, valor2 : Float) : async Float {
     if (valor2 == 0) {
       return 0; 
     } else {
