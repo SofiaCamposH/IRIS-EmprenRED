@@ -1,39 +1,19 @@
 import { MotokoProject_backend } from "../../declarations/MotokoProject_backend";
 
-const add=document.querySelector('#add');
-const substract=document.querySelector('#substract');
-const multiply=document.querySelector('#multiply');
-const divided=document.querySelector('#divided');
-const exp=document.querySelector('#exp');
-
-add.addEventListener('click', async(e)=>{
-  await callFunction(e);
-})
-
-substract.addEventListener('click', async(e)=>{
-  await callFunction(e);
-})
-
-multiply.addEventListener('click', async(e)=>{
-  await callFunction(e);
-})
-
-divided.addEventListener('click', async(e)=>{
-  await callFunction(e);
-})
-
-exp.addEventListener('click', async(e)=>{
-  await callFunction(e);
-})
-
-async function callFunction(e){
+document.querySelector("form").addEventListener("submit", async (e) => {
   e.preventDefault();
-  e.target.setAttribute('disabled', true);
-  const num1=parseInt(document.querySelector('#valor1').value,10);
-  const num2=parseInt(document.querySelector('#valor2').value,10);
-  console.log(e.target.id);
-  const result= await MotokoProject_backend[e.target.id](num1, num2);
-  e.target.removeAttribute('disabled');
-  document.querySelector('#resultado').textContent=result;
+  const button = e.target.querySelector("button");
+
+  const name = document.getElementById("name").value.toString();
+
+  button.setAttribute("disabled", true);
+
+  // Interact with foo actor, calling the greet method
+  const greeting = await MotokoProject_backend.greet(name);
+
+  button.removeAttribute("disabled");
+
+  document.getElementById("greeting").innerText = greeting;
+
   return false;
-}
+});

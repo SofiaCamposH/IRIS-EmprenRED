@@ -2,42 +2,91 @@
 <html>
 
 <head>
-    <title>Calculadora</title>
+    <title>EmprenRed</title>
     <link rel="stylesheet" href="main.css">
-    <style>
-      body {
-          background-image: url("fondo.png");
-      }
-  </style>
+  
 </head>
 
 <body>
     <header>
-        <h1> Calculadora</h1>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="EMPRENRED-negrro.jpg" alt="Logo">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="principal.html">Inicio</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="registro.html">Registro</a></li>
+                        <li><a href="inicioSesion.html">Inicio de Sesion </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
+        <div class="search">
+            <form action="#">
+                <label for="name">Buscador: &nbsp;</label>
+                <input id="name" alt="Name" type="text" />
+                <button>
+                    <i class="fa fa-search" style="font-size: 18px;">
+                    </i>
+                </button>
+            </form>
+            <section id="greeting"></section>
+            </main>
+        </div>
+
+        <!-- Background image -->
+        <div class="p-5 text-center bg-image" style="
+            background-image: url('medellin.jpg');
+            height: 400px;
+            margin-top: 20px;
+          ">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-white">
+                        <h1 class="mb-3">EmprenRed</h1>
+                        <h4 class="mb-3">Cultivando el futuro, cosechando el progreso</h4>
+                    </div>s
+                </div>
+            </div>
+        </div>
     </header>
-    <!-- Input para el primer valor -->
-    <div id="info">
-      <label for="valor1">Ingrese el primer numero:</label>
-      <input type="text" id="valor1">
-
-      <!-- Input  para el segundo valor -->
-      <label for="valor2">Ingrese el segundo numero :</label>
-      <input type="text" id="valor2">
-    </div>
-
-    <!--resultado -->
-    <p id="resultado"></p>
-
-    <!-- Botones -->
     <div class="container">
-        <button id="add">Sumar</button>
-        <button id="substract">Restar</button>
-        <button id="multiply">Multiplicar</button>
-        <button id="divided">Dividir</button>
-        <button id="exp">Potencia</button>
+        <!-- Background image -->
+        <div class="container m-3">
+            <div class="row justify-content-center">
+                <div class="col-3">
+                    <div class="card">
+                        <img src="acesorias.jpg" class="card-img-top img-fluid" alt="Fissure in Sandstone" /> <!-- Agregamos la clase img-fluid -->
+                        <div class="card-body">
+                            <h5 class="card-title">Asesorias</h5>
+                            <p class="card-text">Conoce a nuestros Asesores </p>
+                            <a href="contacto.html" class="btn btn-primary">Mas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img src="financiera.jpg" class="card-img-top img-fluid" alt="Fissure in Sandstone" /> <!-- Agregamos la clase img-fluid -->
+                        <div class="card-body">
+                            <h5 class="card-title">Financiamiento</h5>
+                            <p class="card-text">Programas Financieros</p>
+                            <a href="financiero.html" class="btn btn-primary">Mas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
     </div>
 
+
+    
 </body>
 
 </html>
