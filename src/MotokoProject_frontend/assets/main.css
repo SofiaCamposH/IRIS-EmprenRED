@@ -11,6 +11,7 @@ body {
     padding: 0;
     background-position: center;
     background-color: #ffcd00;
+
 }
 
 
@@ -193,29 +194,25 @@ body {
     cursor: pointer;
 }*/
 
-.search button {
+.search button {/*coregir este error*/
     position: absolute;
     top: 0;
     right: 0;
     width: 40px; /* Ancho de la imagen */
     height: 40px; /* Alto de la imagen */
-    background-image: url('../imagen/view_12700045.png');
+    background-image: url('../imagen/shopping_13797939.png');
     background-size: cover; /* Ajusta la imagen de fondo para cubrir completamente el botón */
     border: none;
     border-radius: 10px; /* Redondea las esquinas del botón */
     cursor: pointer;
 }
 
-
 .search button i {
-    color: #fff;
+    color: #ffffff;
     vertical-align: middle;
 }
-/*
-/* Opcional: Estilo al pasar el ratón sobre el botón 
-.search button:hover {
-    background: #c20505;
-}*/
+
+/* Opcional: Estilo al pasar el ratón sobre el botón */
 
 
 /*los cuadros */
@@ -244,4 +241,154 @@ body {
 .btn-primary:hover {
     background-color: #ffcc00; /* Amarillo dorado más oscuro */
     border-color: #ffcc00; /* Borde amarillo dorado más oscuro */
+}
+
+/*Subsidios*/
+
+/* Estilos para la sección de subsidios */
+
+
+#subsidios {
+    margin: 50px auto;
+    width: 80%;
+}
+
+.subsidio {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.subsidio h2 {
+    margin-top: 0;
+}
+
+.subsidio p {
+    margin-bottom: 10px;
+}
+
+.subsidio img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #df4014;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+
+
+/*Imagen del Medio del Index*/
+.bg-image {
+    
+    background-color: rgba(0, 0, 0, 0.622); /* Color del segundo fondo */
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Pseudo-elemento ::before para el segundo fondo */
+.bg-image::before {
+    content: ""; /* Contenido vacío */
+    background-image: url('medellin.jpg');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca el pseudo-elemento detrás del contenido real */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Estilos para el texto */
+.text-white {
+    color: white;
+    font-size: 2rem;
+}
+
+/*los div del index*/
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .card-container {
+    display: flex;
+  }
+  
+  .card {
+    flex: 1;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .card-img-top {
+    width: 70%;
+    height: auto;
+  }
+  
+  .card-body {
+    padding: 10px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+/*botones tarjetas*/
+.btn-more {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #C8102E;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none; /* Para quitar la subrayado del enlace */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-more:hover {
+    background-color: #db6517;
+  }
+
+
+  /*Pie de Paguina*/
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }

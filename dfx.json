@@ -11,6 +11,7 @@
       "frontend": {
         "entrypoint": "src/MotokoProject_frontend/src/index.html"
       },
+      
       "source": [
         "src/MotokoProject_frontend/assets",
         "dist/MotokoProject_frontend/"
