@@ -10,7 +10,8 @@ Una vez que los emprendedores reciban el financiamiento, es importante que conti
 
 Más del 40% de los emprendedores en Medellín quiebran en los primeros 2 años y aproximadamente más del 43% de los emprendedores que son acreedores un subsidio no lo usan correctamente y llegan a un punto sin retorno
 
-# implementacion de ICP En este proyecto será utilizado el ICP para
+# Implementacion de ICP 
+En este proyecto será utilizado el ICP para
 
 - Seguridad (datos, transacciones, identidad)
 
@@ -19,7 +20,7 @@ Más del 40% de los emprendedores en Medellín quiebran en los primeros 2 años 
 - Trazabilidad (transacciones, certificados)
 
 
-# plan de negocios 
+# Plan de negocios 
 ## 1. Segmento de clientes:
 Emprendedores: Individuos o equipos que buscan iniciar o hacer crecer un negocio en Medellín.
 Organismos otorgantes de subsidios: Gobierno, bancos, aceleradoras y otras entidades que ofrecen subsidios a emprendedores.
