@@ -69,26 +69,49 @@ Asociaciones y alianzas: Los costos asociados a la formación y mantenimiento de
 
 Suscripciones: Se cobrará una tarifa mensual o anual a los organismos otorgantes por el uso de la plataforma.
 
-## Pasos para correr el proyecto:
+# Pasos para correr el proyecto:
 
-## 1.- Clonar repositorio:
+## 1.- Instalar WSL
+Si estás usando Windows, debes instalar el WSL (Windows Subsystem for Linux) para que todo funcione correctamente, a través del siguiente comando en la consola:
 
-``` git clone https://github.com/SofiaCamposH/IRIS-EmprenRED.git  ```
+```bash
+wsl --install
+```
 
-## 2.- Ingresar al proyecto:
+## 2.- Instalar DFX
 
-``` cd IRIS-EmprenRED.git ```
+```bash
+sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"
+```
 
-## 3.- Instalar dependencias de Node:
+## 3.- Clonar repositorio:
 
-``` npm install ```
+```bash
+git clone https://github.com/SofiaCamposH/IRIS-EmprenRED.git
+```
 
-## 4.- Levantar réplica
+## 4.- Ingresar al proyecto:
 
-``` dfx start –background ```
+```bash
+cd IRIS-EmprenRED.git
+```
 
-## 5.- Hacer el deploy del proyecto
+## 5.- Instalar dependencias de Node:
 
-``` dfx deploy ```
+```bash
+npm install
+```
+
+## 6.- Levantar réplica
+
+```bash
+dfx start –background
+```
+
+## 7.- Hacer el deploy del proyecto
+
+```bash 
+dfx deploy
+```
 
 
